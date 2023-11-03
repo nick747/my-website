@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-btn {
+    padding: 0px 10px;
+    font-size: 1rem;
+    color: rgba(222, 222, 222, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .nav-btn:hover:not(.active) {
+    color: #dedede;
+    transform: scale(1.1);
+  }
+
+  .nav-btn.active {
+    color: white;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+
+  .highlight-gradient {
+    background: linear-gradient(90deg, #9b59b6 0%, #3498db 100%);
+    text-shadow: 0px 0px 8px rgba(155, 89, 182, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+
+  .skill {
+    @apply w-20 m-2 aspect-square transition ease-linear scale-110 sm:w-12 md:w-16 lg:w-16 xl:w-20;
+  }
+
+  .skill-basic {
+    @apply w-20 m-2 aspect-square transition ease-linear hover:scale-110 sm:w-12 md:w-16 lg:w-16 xl:w-20 opacity-30;
+  }
+}
