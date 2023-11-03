@@ -44,10 +44,51 @@
   }
 
   .skill {
-    @apply w-20 m-2 aspect-square transition ease-linear scale-110 sm:w-12 md:w-16 lg:w-16 xl:w-20;
+    aspect-ratio: 1 / 1;
+    margin: 0.5rem;
+    width: 5rem;
+    transition: all 0.3s ease;
+
+    @media (min-width: 640px) {
+      width: 3rem;
+    }
+    @media (min-width: 768px) {
+      width: 4rem;
+    }
+    @media (min-width: 1024px) {
+      width: 4rem;
+    }
+    @media (min-width: 1280px) {
+      width: 5rem;
+    }
+  }
+
+  .skill:hover {
+    transform: scale(1.1);
   }
 
   .skill-basic {
-    @apply w-20 m-2 aspect-square transition ease-linear hover:scale-110 sm:w-12 md:w-16 lg:w-16 xl:w-20 opacity-30;
+    aspect-ratio: 1 / 1;
+    margin: 0.5rem;
+    width: 5rem;
+    transition: all 0.3s ease;
+    opacity: 0.3;
+
+    @media (min-width: 640px) {
+      width: 3rem;
+    }
+    @media (min-width: 768px) {
+      width: 4rem;
+    }
+    @media (min-width: 1024px) {
+      width: 4rem;
+    }
+    @media (min-width: 1280px) {
+      width: 5rem;
+    }
+  }
+
+  .skill-basic:hover {
+    transform: scale(1.1);
   }
 }

@@ -570,8 +570,59 @@ button {
   font-weight: 700;
 }
 
+.skill {
+  aspect-ratio: 1 / 1;
+  margin: 0.5rem;
+  width: 5rem;
+  transition: all 0.3s ease;
+  @media (min-width: 640px) {
+    width: 3rem;
+  }
+  @media (min-width: 768px) {
+    width: 4rem;
+  }
+  @media (min-width: 1024px) {
+    width: 4rem;
+  }
+  @media (min-width: 1280px) {
+    width: 5rem;
+  }
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill-basic {
+  aspect-ratio: 1 / 1;
+  margin: 0.5rem;
+  width: 5rem;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+  @media (min-width: 640px) {
+    width: 3rem;
+  }
+  @media (min-width: 768px) {
+    width: 4rem;
+  }
+  @media (min-width: 1024px) {
+    width: 4rem;
+  }
+  @media (min-width: 1280px) {
+    width: 5rem;
+  }
+}
+
+.skill-basic:hover {
+  transform: scale(1.1);
+}
+
 .fixed {
   position: fixed;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .left-0 {
@@ -598,12 +649,24 @@ button {
   height: 3rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-3\/4 {
   width: 75%;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -625,6 +688,10 @@ button {
 .bg-\[\#121212\] {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-5 {
@@ -651,8 +718,36 @@ button {
   text-transform: uppercase;
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .no-underline {
   text-decoration-line: none;
+}
+
+.decoration-transparent {
+  text-decoration-color: transparent;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.hover\:decoration-\[\#dedede\]:hover {
+  text-decoration-color: #dedede;
 }
 
 @media (min-width: 640px) {
