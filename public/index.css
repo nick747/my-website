@@ -534,6 +534,42 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.nav-btn {
+  padding: 0px 10px;
+  font-size: 1rem;
+  color: rgba(222, 222, 222, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover:not(.active) {
+  color: #dedede;
+  transform: scale(1.1);
+}
+
+.nav-btn.active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.highlight-gradient {
+  background: linear-gradient(90deg, #9b59b6 0%, #3498db 100%);
+  text-shadow: 0px 0px 8px rgba(155, 89, 182, 0.2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
 .fixed {
   position: fixed;
 }
@@ -550,8 +586,24 @@ video {
   top: 0px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -560,6 +612,14 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .bg-\[\#121212\] {
@@ -575,4 +635,46 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+@media (min-width: 640px) {
+  .sm\:h-12 {
+    height: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:h-16 {
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-20 {
+    height: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-28 {
+    height: 7rem;
+  }
 }

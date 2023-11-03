@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./images/ppCircle.png" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Nick747</title>
   </head>
   <body>
@@ -12,10 +13,42 @@
       class="fixed top-0 left-0 right-0 py-2 flex justify-center items-center bg-[#121212]"
     >
       <div class="flex justify-center items-center px-5">
-        <button class="nav-btn">.about</button>
-        <button class="nav-btn">.wow</button>
-        <button class="nav-btn">.links</button>
+        <a href="./index.html" class="nav-btn no-underline">.about</a>
+        <a href="./pages/skills.html" class="nav-btn no-underline">.skills</a>
+        <a href="./pages/links.html" class="nav-btn no-underline">.links</a>
       </div>
     </header>
+
+    <main
+      id="about"
+      class="flex flex-col justify-center items-center gap-7 w-3/4"
+    >
+      <div class="flex justify-center items-center gap-5">
+        <img
+          src="./images/ppCircle.png"
+          alt="profile picture"
+          class="h-12 sm:h-12 md:h-16 lg:h-20 xl:h-28"
+        />
+        <h1 class="text-4xl">Nick747</h1>
+      </div>
+      <p class="text-base">
+        Ciao! I&apos;m Nick (or Mario), an Italian
+        <span class="highlight-gradient">tech enthusiast</span>. I began my
+        coding journey at age 9 , initially just for fun, but it quickly evolved
+        into a deep passion. What I love most is not just technology itself, but
+        how it can be used to
+        <span class="highlight-gradient">help people</span>. I also like
+        robotics and electronics, always experimenting and building. Alongside
+        this, I&apos;m somewhat good at
+        <span class="highlight-gradient">web development</span> with HTML, CSS,
+        and JavaScript, and I&apos;m currently diving into React and Tailwind.
+        I&apos;ve also dabbled in designing websites and apps. In the world of
+        mobile app development, I&apos;m a beginner
+        <span class="highlight-gradient">Flutter developer</span>. This summer I
+        sarted my <span class="highlight-gradient">on-line blog</span> which you
+        can find in the "links" tab. One day, I hope my passion becomes a real
+        job :)
+      </p>
+    </main>
   </body>
 </html>
